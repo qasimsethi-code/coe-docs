@@ -1,0 +1,124 @@
+/* Custom styling for COE Documentation */
+
+:root {
+  --md-primary-fg-color: #303f9f;
+  --md-accent-fg-color: #7c4dff;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #5c6bc0;
+  --md-accent-fg-color: #b388ff;
+}
+
+/* Hero section styling */
+.md-typeset .hero-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #303f9f, #7c4dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .hero-title {
+  background: linear-gradient(135deg, #7986cb, #b388ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.md-typeset .hero-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .hero-subtitle {
+  color: #aaa;
+}
+
+/* Status badges */
+.md-typeset .status-built {
+  background-color: #4caf50;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.md-typeset .status-progress {
+  background-color: #ff9800;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.md-typeset .status-planned {
+  background-color: #2196f3;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.md-typeset .status-blocked {
+  background-color: #f44336;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Card grid */
+.md-typeset .grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.md-typeset .card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.md-typeset .card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.md-typeset .card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+/* Table enhancements */
+.md-typeset table:not([class]) {
+  font-size: 0.82rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 600;
+}
+
+/* Admonition tweaks */
+.md-typeset .admonition {
+  border-radius: 6px;
+}
+
+/* Print-friendly */
+@media print {
+  .md-header, .md-sidebar, .md-footer {
+    display: none !important;
+  }
+}

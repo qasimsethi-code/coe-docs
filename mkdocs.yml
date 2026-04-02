@@ -1,0 +1,123 @@
+site_name: "COE Documentation — Qasim Sethi"
+site_description: "Personal knowledge base, project portfolio, and promotion evidence hub for Qasim Sethi — Pricing Appraiser at Al-Futtaim Automotive, Dubai."
+site_author: "Qasim Sethi"
+site_url: "https://qasimsethi-code.github.io/coe-docs/"
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+repo_name: qasimsethi-code/coe-docs
+repo_url: https://github.com/qasimsethi-code/coe-docs
+
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/qasimsethi-code
+    - icon: fontawesome/solid/envelope
+      link: mailto:Qasim.Sethi@alfuttaim.com
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: "&copy; 2026 Qasim Sethi — Al-Futtaim Automotive COE"
+
+nav:
+  - Home: index.md
+  - Projects:
+    - Overview: projects/index.md
+    - Vehicle Valuation Workflow: projects/vehicle-valuation-workflow.md
+    - Autorola PAD Automation: projects/autorola-pad-automation.md
+    - COE CLI: projects/coe-cli.md
+    - Dual-Agent Architecture: projects/dual-agent-architecture.md
+    - SAP P01 Integration: projects/sap-p01-integration.md
+    - af-pricing-agent & Widget: projects/af-pricing-agent.md
+    - AFM Pricing Engine & HTML Tools: projects/afm-pricing-engine.md
+    - Automall DSR Consolidation: projects/automall-dsr-consolidation.md
+    - PnP.PowerShell Installation: projects/pnp-powershell.md
+    - Copilot Studio & Microsoft Integration: projects/copilot-studio-integration.md
+    - Appraisal Engine Bot: projects/appraisal-engine-bot.md
+    - GCC Used-Car Appraisal Template: projects/gcc-appraisal-template.md
+    - Appraisal Quality & Evidence: projects/appraisal-quality-evidence.md
+    - Market Intelligence & Data Assets: projects/market-intelligence.md
+  - Workflow Automations: automations.md
+  - Tools & Technologies: tools-technologies.md
+  - IDP & Career Development: idp-career.md
+  - Architecture & Design: architecture.md
+  - Pending Tasks & Roadmap: roadmap.md
